@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+
+  background-color: lightseagreen;
+}
+
+.container {
+  overflow-y: scroll;
+
+  width: 850px;
+  height: 75vh;
+
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 8px;
+  border-radius: 25px 5px;
+
+  background-color: #FFF;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: solid .5px;
+  border-left: solid .5px;
+  border-right: solid .5px;
+}
+
+.item#lastItem {
+  border-bottom: solid .5px;
+}
+
+.item > p {
+  width: 67.5%;
+
+  margin: 4px 0 4px 6px;
+}
+
+.item > div {
+  display: flex;
+  justify-content: space-between;
+
+  width: 30%;
+}
+
+.item > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  
+  border-left: solid .5px;
+  border-right: solid .5px;
+}
+
+.item input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+  
+  border: none;
+}
+
+button {
+  margin: 15px 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px 5px;
+
+  background: lightseagreen;
+  transition: background-color .5s, color .5s;
+}
+
+button:hover {
+  color:  black;
+  background: wheat;
+}
+
+button:active {
+  color: white;
+  background: black;
+  transition: 0;
+}
